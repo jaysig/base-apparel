@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  font-family: Josefin Sans, sans-serif;
+  margin: 0;
+  min-height: 100%;
+}
+
+h1 {
+  margin: 0;
+  font-size: 4em;
+  letter-spacing: 12px;
+}
+
+::placeholder {
+  color: #ce9797;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+/* FORM STYLING */
+form {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ce9797;
+  border-radius: 25px;
+  height: 40px;
+  width: 90%;
+}
+
+input {
+  flex-grow: 2;
+  border: none;
+  margin: 10px;
+}
+input :focus {
+  outline: none;
+}
+
+button {
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  border-radius: 16px;
+  width: 20%;
+  border: 20px;
+}
+
+/* LAYOUT STYLING */
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.container {
+  margin: 50px 75px 50px 150px;
+}
+
+.input-column {
+  height: 500px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.cta {
+  padding-right: 50px;
+}
+
+/* .wrapper */
+/* IMAGE STYLING */
+.logo {
+  width: 30%;
+}
+
+.photo {
+  height: 100%;
+}
+
+/* TEXT STYLING */
+.soft-text {
+  color: #f96262;
+  font-weight: 300;
+}
+
+.saturated-text {
+  color: #ce9797;
+  font-weight: 400;
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+
+.rounded-input {
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
