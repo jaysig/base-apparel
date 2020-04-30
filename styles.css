@@ -9,6 +9,11 @@ body {
   margin: 0;
   min-height: 100%;
 }
+@media (max-width: 500px) {
+  body {
+    font-size: 0.6rem;
+  }
+}
 
 h1 {
   margin: 0;
@@ -21,6 +26,7 @@ h1 {
   font-weight: 400;
   font-size: 1rem;
   padding: 10px;
+  opacity: 80%;
 }
 
 /* FORM STYLING */
@@ -31,6 +37,11 @@ form {
   border-radius: 25px;
   height: 40px;
   width: 90%;
+}
+@media (max-width: 500px) {
+  form {
+    width: 100%;
+  }
 }
 
 input {
@@ -60,9 +71,23 @@ button {
 .container {
   margin: 50px 75px 50px 150px;
 }
+@media (max-width: 500px) {
+  .container {
+    margin: 0px 25px 25px 25px;
+  }
+}
 
 .input-column {
   height: 500px;
+}
+
+.input-container {
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .input-container {
+    margin-top: 50px;
+  }
 }
 
 .row {
@@ -72,8 +97,16 @@ button {
   width: 100%;
 }
 
-.cta {
-  padding-right: 50px;
+@media (max-width: 500px) {
+  .cta {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .photo-column {
+    display: none;
+  }
 }
 
 /* .wrapper */
@@ -81,14 +114,36 @@ button {
 .logo {
   width: 30%;
 }
+@media (max-width: 500px) {
+  .logo {
+    width: 30%;
+    padding-top: 40px;
+  }
+}
 
 .photo {
   height: 100%;
 }
+@media (max-width: 500px) {
+  .photo {
+    display: none;
+  }
+}
+
+.photo-phone {
+  display: none;
+}
+@media (max-width: 500px) {
+  .photo-phone {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
 
 /* TEXT STYLING */
 .soft-text {
-  color: #f96262;
+  color: #ce9797;
   font-weight: 300;
 }
 
@@ -98,9 +153,18 @@ button {
   margin-bottom: 30px;
   line-height: 30px;
 }
+@media (max-width: 500px) {
+  .saturated-text {
+    font-size: 0.9rem;
+  }
+}
 
 .rounded-input {
   font-size: 1rem;
+}
+
+.titles {
+  display: block;
 }
 
 /*# sourceMappingURL=styles.css.map */

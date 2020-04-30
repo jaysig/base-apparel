@@ -8,6 +8,7 @@ $heavy: 600
 $mid: 400
 $light: 300
 $inputTextSize: 1rem
+$breakpointPhone: 500px
 
 html
     height: 100%
@@ -17,6 +18,8 @@ body
     font-family: Josefin Sans, sans-serif
     margin: 0
     min-height: 100%
+    @media (max-width: $breakpointPhone)
+        font-size: .6rem
 
 h1
     margin: 0
@@ -28,6 +31,7 @@ h1
     font-weight: $mid
     font-size: $inputTextSize
     padding: 10px
+    opacity: 80%
 
 /* FORM STYLING
 form
@@ -37,6 +41,8 @@ form
     border-radius: 25px
     height: 40px
     width: 90%
+    @media (max-width: $breakpointPhone)
+        width: 100%
 
 input
     flex-grow: 2
@@ -62,9 +68,16 @@ button
 
 .container
     margin: 50px 75px 50px 150px
+    @media (max-width: $breakpointPhone)
+        margin: 0px 25px 25px 25px
 
 .input-column
     height: 500px
+
+.input-container
+    text-align: center
+    @media (max-width: $breakpointPhone)
+        margin-top: 50px
 
 .row
     display: flex
@@ -73,21 +86,38 @@ button
     width: 100%
 
 .cta
-    padding-right: 50px
+    @media (max-width: $breakpointPhone)
+        padding: 0 10px
+
+.photo-column
+    @media (max-width: $breakpointPhone)
+        display: none
 
 /* .wrapper
 
 /* IMAGE STYLING
 .logo
     width: 30%
+    @media (max-width: $breakpointPhone)
+        width: 30%
+        padding-top: 40px
 
 .photo
     height: 100%
+    @media (max-width: $breakpointPhone)
+        display: none
+
+.photo-phone
+    display: none
+    @media (max-width: $breakpointPhone)
+        display: block
+        width: 100%
+        height: auto
 
 /* TEXT STYLING
 
 .soft-text
-    color: $softRed
+    color: $saturatedRed
     font-weight: $light
 
 .saturated-text
@@ -95,9 +125,14 @@ button
     font-weight: $mid
     margin-bottom: 30px
     line-height: 30px
+    @media (max-width: $breakpointPhone)
+        font-size: .9rem
 
 .rounded-input
     font-size: $inputTextSize
+
+.titles
+    display: block
 
 
 
